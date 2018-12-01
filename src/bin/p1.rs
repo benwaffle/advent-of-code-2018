@@ -16,15 +16,13 @@ fn main() {
     // part 2
     let mut seen = HashSet::<i32>::new();
     let mut cur = 0;
-    'outer: loop {
-        for val in values.iter() {
-            cur += val;
-            if seen.contains(&cur) {
-                println!("Part 2: {:?}", cur);
-                break 'outer;
-            } else {
-                seen.insert(cur);
-            }
+    for val in values.iter().cycle() {
+        cur += val;
+        if seen.contains(&cur) {
+            println!("Part 2: {:?}", cur);
+            break;
+        } else {
+            seen.insert(cur);
         }
     }
 }
