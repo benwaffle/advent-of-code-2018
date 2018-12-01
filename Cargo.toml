@@ -1,0 +1,6 @@
+[package]
+name = "advent-of-code-2018"
+version = "0.0.1"
+authors = ["Ben Iofel <ben@iofel.me>"]
+
+[dependencies]
