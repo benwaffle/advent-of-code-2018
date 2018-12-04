@@ -11,7 +11,7 @@ fn main() {
         .collect();
 
     // part 1
-    println!("Part 1: {}", values.iter().fold(0, |acc, x| acc + x));
+    println!("Part 1: {}", values.iter().sum::<i32>());
 
     // part 2
     let mut seen = HashSet::<i32>::new();
