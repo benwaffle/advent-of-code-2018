@@ -1,5 +1,5 @@
-use std::fs;
 use std::collections::HashSet;
+use std::fs;
 
 fn main() {
     let contents = fs::read_to_string("input/p1").expect("input/p1 doesn't exist");
